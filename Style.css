@@ -1,0 +1,395 @@
+2 — CSS Code
+Create/open style.css and paste this:
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f3eb;
+    color: #3b2416;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #3b2416;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #e8c99b;
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #c8955b;
+    color: #3b2416;
+}
+
+
+/* =========================
+   MAIN SECTIONS
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    margin: 25px 15px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #6b3e26;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #d6ae7b;
+    padding-bottom: 8px;
+}
+
+section h3 {
+    color: #7b4a2f;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+section p {
+    margin-bottom: 12px;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+#home {
+    text-align: center;
+    padding: 50px 30px;
+    background-color: #fffaf2;
+}
+
+#home h2 {
+    font-size: 36px;
+    border: none;
+}
+
+#home p {
+    max-width: 750px;
+    margin: 12px auto;
+}
+
+#home > a {
+    display: inline-block;
+    background-color: #6b3e26;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    margin-top: 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#home > a:hover {
+    background-color: #c8955b;
+    color: #3b2416;
+}
+
+
+/* =========================
+   IMAGES
+========================= */
+
+.home-images,
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.home-images img,
+.gallery img {
+    width: 30%;
+    min-width: 200px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.home-images img:hover,
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+#about > img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    margin: 25px auto 0;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+#menu {
+    text-align: left;
+}
+
+#menu h3 {
+    background-color: #f3e3cf;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 5px 15px;
+}
+
+#menu li {
+    padding: 7px 0;
+    border-bottom: 1px solid #ead9c5;
+}
+
+#menu li::before {
+    content: "☕ ";
+}
+
+
+/* =========================
+   OFFERS
+========================= */
+
+#offers {
+    background-color: #fff8e9;
+}
+
+#offers h3 {
+    margin-top: 15px;
+}
+
+
+/* =========================
+   REVIEWS
+========================= */
+
+article {
+    background-color: #f8f0e5;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 5px solid #c8955b;
+    border-radius: 6px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact strong {
+    color: #6b3e26;
+}
+
+#contact a {
+    color: #7b4a2f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+    max-width: 650px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d4c1aa;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #8b5a38;
+}
+
+form button {
+    background-color: #6b3e26;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #c8955b;
+    color: #3b2416;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #3b2416;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 30px;
+}
+
+footer h2 {
+    font-family: Georgia, serif;
+    margin-bottom: 5px;
+}
+
+footer p {
+    color: #e8c99b;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 80%;
+        text-align: center;
+    }
+
+    section {
+        padding: 25px 18px;
+        margin: 18px 10px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    #home h2 {
+        font-size: 28px;
+    }
+
+    .home-images img,
+    .gallery img {
+        width: 100%;
+        min-width: 0;
+        height: 220px;
+    }
+
+    #about > img {
+        height: 220px;
+    }
+}
+Now you have:
+1. index.html ✅
+2. style.css ✅
+�⁠Say 3 and I'll give you the JavaScript for the website.
